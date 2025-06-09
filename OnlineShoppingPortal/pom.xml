@@ -41,30 +41,37 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
+		<!-- 	<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.9.0</version>
 			<scope>test</scope>
+		</dependency>  -->
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+			<scope>test</scope>
 		</dependency>
-		
 	</dependencies>
-			<build>
-				<plugins>
-					<plugin>
-						<!--
-						https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+	<build>
+		<plugins>
+			<plugin>
+				<!--
+				https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
 
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>3.2.5</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
 
-						<configuration>
-							<suiteXmlFiles>
-								<suiteXmlFile>End_To_End_Flow.xml</suiteXmlFile>
-							</suiteXmlFiles>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>			
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>End_To_End_Flow.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>			
 </project>
